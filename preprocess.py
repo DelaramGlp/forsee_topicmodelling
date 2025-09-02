@@ -3,6 +3,7 @@ import pandas as pd
 import pprint
 import csv
 import fitz
+import re
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -97,35 +98,23 @@ def extract_sentences(csv_path):
 def preprocess_text(sentences): 
     processed_sentences = []
    
-    stop_words = set(stopwords.words('english'))
-    stop_words.update([ 'system', 'oj', 'http', 'ai', 'information', 'article', 'annex', 'chapter', 'point', 'section',
-                          'including', 'eli', 'referred', 'eu', 'following', 'based','en', 'ensure', 'least', 'set',
-                         'additional', 'accordance', 'etc', 'certain', 'specific', 'also', 'particular', 'regulation', 'union',
-                         'commission', 'parliament', 'european', 'may', 'shall', 'within', 'council', 'member', 'state', 'national',
-                         'used', 'apply', 'relevant', 'regard', 'ec', 'mean', 'directive', 'repealing','amending','drawing',
-                       'convention', 'europe', 'artificial', 'intelligence', 'party', 'law', 'secretary', 'general', 'conference', 'system',
-                         'month', 'amendment', 'state', 'minister', 'declaration', 'committee', 'date', 'paragraph', 'seek', 'force', 'acceptance', 'approval',
-                           'first', 'day', 'three', 'ratification', 'treaty', 'period', 'signature', 'cets', 'similar', 'activity', 'reservation',
-                           'made', 'application', 'instrument', 'framewrok', 'rule', 'international', 'proposed', 'accession', 'territory', 'notification',
-                           'time', 'enter', 'entry', 'elaboration', 'expiration', 'participated', 'appropriate', 'effect', 'provision', 'implementation', 'facilitating',
-                           'addressed', 'respect', 'deposit', 'receipt', 'obligation', 'pursuance', 'accede', 'two',
-                           'i','ii', 'iii', 'iv', 'affect', 'list', 'technology', 'refers', 'might', 'could', 'altai', 'hleg', 'put', 'guideline',
-                            'recommendation', 'document', 'doe',
-                             'recital', 'act', 'si', 'see', 'new', 'next', 'swd', 'ecli', 'june', 'july', 'ibidem', 'example', 'therefore',
-                              'august', 'meet', 'met', 'ha', 'thus', 'whether', 'manner',
-                               'figure', 'signatory', 'office' ]) 
-    #add university just for altai
-
+    #stop_words = set(stopwords.words('english'))
+   
     for sentence in sentences:
+        #  3. Remove URLs
+        sentence = re.sub(r'https?://\S+|www\.\S+', '', sentence)
         #1.tokenising
         tokens = word_tokenize(sentence)
-        #2.lowercasing
+        #2.lowercasing and removing non-alphabetic tokens
         tokens = [token.lower() for token in tokens if token.isalpha()] #Does this remove words with hyphens?? 
         #3.lemmatization
-        lemmatizer = WordNetLemmatizer()
-        tokens = [lemmatizer.lemmatize(token) for token in tokens]
+       # lemmatizer = WordNetLemmatizer()
+       # tokens = [lemmatizer.lemmatize(token) for token in tokens]
         # 5. Remove stop words
-        tokens = [token for token in tokens if token not in stop_words]
+       # tokens = [token for token in tokens if token not in stop_words]
+
+      
+
         # 4. Remove numbers, but not words that contain numbers.
         tokens = [token for token in tokens if not token.isnumeric()]
         # 5. Remove words that are only one character.
@@ -140,12 +129,12 @@ def preprocess_text(sentences):
 
 extract_text('doc.pdf')
 filename = os.path.splitext('doc.pdf')[0]
-sentences = split_to_sentence('doc.txt')
+sentences = split_to_sentence(filename+'.txt')
 save_csv(sentences , filename+"_sen.csv")
 
 save_csv(preprocess_text(sentences), filename+"_sen_clean.csv") #pre-processed sentences
 
-pages = split_into_pages('doc.txt')
+pages = split_into_pages(filename+'.txt')
 save_csv(pages, filename+"_page.csv")
 save_csv(preprocess_text(pages), filename+"_page_clean.csv") #pre-processed pages
 
