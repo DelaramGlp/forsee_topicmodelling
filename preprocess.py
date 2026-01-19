@@ -127,8 +127,8 @@ def preprocess_text(sentences):
 
 
 
-extract_text('doc.pdf')
-filename = os.path.splitext('doc.pdf')[0]
+extract_text('g7.pdf')
+filename = os.path.splitext('g7.pdf')[0]
 sentences = split_to_sentence(filename+'.txt')
 save_csv(sentences , filename+"_sen.csv")
 

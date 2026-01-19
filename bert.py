@@ -30,17 +30,23 @@ def create_wordcloud(model, topic):
     #plt.axis("off")
     #plt.show()
 
-
-stop_words = list(text.ENGLISH_STOP_WORDS.union(["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december",
-                                                 "spring",
+#EU Policies stop words
+'''stop_words = list(text.ENGLISH_STOP_WORDS.union(["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december",
+                                                 "spring", 
                 "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii",
                 "oj", "en", "http", "tfeu", "isbn", "pdf",
-                "ai", "system",
+                "ai", "system", "systems", "artificial", "intelligence",
                 "europe", "eu", "ec", "eli", "commission", "union", "european", "parliament", "council", "directive", "regulation", "law", "act", "acts","hleg",
                 "article", "annex", "chapter", "point", "section", "text", "footnote", "introduction", "appendix",
-              "based"]))
+              "based"]))'''
 
-file_path = 'doc.csv'
+#other supranational
+stop_words = list(text.ENGLISH_STOP_WORDS.union(["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december",
+                                                 "spring", "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "months",
+                "oj", "en", "http", "tfeu", "isbn", "pdf","ai", "system", "systems", "artificial", "intelligence",
+                                                 "oecd", "council", "document", "unesco"]))
+
+file_path = 'adra_sen_clean.csv'
 file_name = os.path.splitext(os.path.basename(file_path))[0]
 df = pd.read_csv(file_path)
 
@@ -54,6 +60,7 @@ df = pd.read_csv(file_path)
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2") #appropiate for Semantic similarity/clustering, all-MiniLM-L6-v2 for fast, light-weight stuff and use all-mpnet-base-v2 for better accuracy
 umap_model = umap.UMAP(n_neighbors=15, n_components=5, min_dist=0.0, metric='cosine', random_state=42) #reduce the dimensions in the embedding
 hdbscan_model = HDBSCAN(min_cluster_size=10, min_samples=5) # clustring model, added it for shorter documents
+#hdbscan_model = HDBSCAN(min_cluster_size=8, min_samples=2, cluster_selection_epsilon=0.2, cluster_selection_method='leaf',prediction_data=True  ) # clustring model, added it for shorter documents
 vectorizer_model = CountVectorizer(ngram_range=(1, 1), stop_words= stop_words)
 representation_model = MaximalMarginalRelevance(diversity=0.3) #because we have no lemmatizers
 
@@ -130,7 +137,7 @@ for j in range(i + 1, len(axes)):
 
 plt.tight_layout()
 #plt.show()
-plt.savefig(file_name+"_bert_wordcloud.svg")
+plt.savefig(file_name+"_bert_wordcloud.png")
 
 
 #fig = topic_model.visualize_term_rank()
