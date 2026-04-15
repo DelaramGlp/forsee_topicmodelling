@@ -1,0 +1,33 @@
+ID,Title,Type of document,Year,Issuer,Link
+ISO_01, ISO/IEC TS 4213:2022 Information technology — Artificial intelligence — Assessment of machine learning classification performance,International standard,2022,ISO/IEC ,https://www.iso.org/standard/79799.html
+ISO_02,"ISO/IEC 5259-1:2024 Artificial intelligence — Data quality for analytics and machine learning (ML) — Part 1: Overview, terminology, and examples",International standard,2024,ISO/IEC,https://www.iso.org/standard/81088.html
+ISO_03,ISO/IEC 5259-2:2024 Artificial intelligence — Data quality for analytics and machine learning (ML) — Part 2: Data quality measures,International standard,2024,ISO/IEC,https://www.iso.org/standard/81860.html
+ISO_04," ISO/IEC 5259-3:2024 Artificial intelligence — Data quality for analytics and machine learning (ML) — Part 3: Data quality management requirements and guidelines
+",International standard,2024,ISO/IEC,https://www.iso.org/standard/81092.html
+ISO_05,ISO/IEC 5259-4:2024 Artificial intelligence — Data quality for analytics and machine learning (ML) — Part 4: Data quality process framework,International standard,2024,ISO/IEC,https://www.iso.org/standard/81093.html
+ISO_06_,ISO/IEC 5259-5:2025 Artificial intelligence — Data quality for analytics and machine learning (ML) — Part 5: Data quality governance framework,International standard,2025,ISO/IEC,https://www.iso.org/standard/84150.html
+ISO_07,ISO/IEC 5338:2023 Information technology — Artificial intelligence — AI system life cycle processes,International standard,2023,ISO/IEC,https://www.iso.org/standard/81118.html
+ISO_08,ISO/IEC 5339:2024 Information technology — Artificial intelligence — Guidance for AI applications,International standard,2024,ISO/IEC,https://www.iso.org/standard/81120.html
+ISO_09, ISO/IEC TR 5469:2024 Artificial intelligence — Functional safety and AI systems,Technical report ,2024,ISO/IEC,https://www.iso.org/standard/81283.html
+ISO_10, ISO/IEC TS 6254:2025 Information technology — Artificial intelligence — Objectives and approaches for explainability and interpretability of machine learning (ML) models and artificial intelligence (AI) systems,Technical specification,2025,ISO/IEC,https://www.iso.org/standard/82148.html
+ISO_11, ISO/IEC TS 8200:2024 Information technology — Artificial intelligence — Controllability of automated artificial intelligence systems,Technical specification,2024,ISO/IEC,https://www.iso.org/standard/83012.html
+ISO_12, ISO/IEC TS 12791:2024 Information technology — Artificial intelligence — Treatment of unwanted bias in classification and regression machine learning tasks,Technical specification,2024,ISO/IEC,https://www.iso.org/standard/84110.html
+ISO_13,ISO/IEC TR 17903:2024 Information technology — Artificial intelligence — Overview of machine learning computing devices,Technical report,2024,ISO/IEC,https://www.iso.org/standard/85078.html
+ISO_14,ISO/IEC TR 20226:2025 Information technology — Artificial intelligence — Environmental sustainability aspects of AI systems,Technical report,2025,ISO/IEC,https://www.iso.org/standard/86177.html
+ISO_15,ISO/IEC TR 21221:2025 Information technology — Artificial intelligence — Beneficial AI systems,Technical report,2025,ISO/IEC,https://www.iso.org/standard/74296.html
+ISO_16,ISO/IEC 22989:2022 Information technology — Artificial intelligence — Artificial intelligence concepts and terminology,International standard,2022,ISO/IEC,https://www.iso.org/standard/74296.html
+ISO_17,ISO/IEC 23053:2022 Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML),International standard,2022,ISO/IEC,https://www.iso.org/standard/74438.html
+ISO_18, ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management,International standard,2023,ISO/IEC,https://www.iso.org/standard/77304.html
+ISO_19, ISO/IEC TR 24027:2021 Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making,Technical report,2021,ISO/IEC,https://www.iso.org/standard/77607.html
+ISO_20," ISO/IEC TR 24028:2020 Information technology — Artificial intelligence — Overview of trustworthiness in artificial intelligence
+",Technical report,2020,ISO/IEC,https://www.iso.org/standard/77608.html
+ISO_21, ISO/IEC TR 24029-1:2021 Artificial Intelligence (AI) — Assessment of the robustness of neural networks — Part 1: Overview,Technical report,2021,ISO/IEC,https://www.iso.org/standard/77609.html
+ISO_22, ISO/IEC 24029-2:2023 Artificial intelligence (AI) — Assessment of the robustness of neural networks — Part 2: Methodology for the use of formal methods,International standard,2023,ISO/IEC,https://www.iso.org/standard/79804.html
+ISO_23, ISO/IEC TR 24030:2024 Information technology — Artificial intelligence (AI) — Use cases,Technical report,2024,ISO/IEC,https://www.iso.org/standard/84144.html
+ISO_24, ISO/IEC TR 24368:2022 Information technology — Artificial intelligence — Overview of ethical and societal concerns,Technical report,2022,ISO/IEC,https://www.iso.org/standard/78507.html
+ISO_25, ISO/IEC TR 24372:2021 Information technology — Artificial intelligence (AI) — Overview of computational approaches for AI systems,Technical report,2021,ISO/IEC,https://www.iso.org/standard/78508.html
+ISO_26, ISO/IEC TS 25058:2024 Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Guidance for quality evaluation of artificial intelligence (AI) systems,Technical specification,2024,ISO/IEC,https://www.iso.org/standard/82570.html
+ISO_27, ISO/IEC 38507:2022 Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations,International standard,2022,ISO/IEC,https://www.iso.org/standard/56641.html
+ISO_28, ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system,International standard,2023,ISO/IEC,https://www.iso.org/standard/81230.html
+ISO_29, ISO/IEC 42005:2025 Information technology — Artificial intelligence (AI) — AI system impact assessment,International standard,2025,ISO/IEC,https://www.iso.org/standard/42005
+ISO_30,ISO/IEC 42006:2025 Information technology — Artificial intelligence — Requirements for bodies providing audit and certification of artificial intelligence management systems,International standard,2025,ISO/IEC,https://www.iso.org/standard/42006

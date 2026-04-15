@@ -1,0 +1,7 @@
+ID,Title,Type of document,Year,Issuer,Country of issuer,Link
+DIN_01,DIN SPEC 92001-1:2019-04 Artificial Intelligence - Life Cycle Processes and Quality Requirements - Part 1: Quality Meta Model,"National standard, DIN SPEC",2019,DIN,Germany,https://www.dinmedia.de/en/technical-rule/din-spec-92001-1/303650673
+DIN_02,DIN SPEC 92001-2:2020-12 Artificial Intelligence - Life Cycle Processes and Quality Requirements - Part 2: Robustness,"National standard, DIN SPEC",2020,DIN,Germany,https://www.dinmedia.de/en/technical-rule/din-spec-92001-2/330011015
+DIN_03,DIN DKE SPEC 99001:2022-05 Definition of a success method for labelling data for artificial intelligence training - Application focus: Question-Answering,"National standard, DIN SPEC",2022,DIN,Germany ,https://www.dinmedia.de/en/technical-rule/din-dke-spec-99001/352309492
+DIN_04, DIN SPEC 32792:2023-07: Semantic definitions to support AI-enabled data processing,"National standard, DIN SPEC",2023,DIN,Germany ,https://www.dinmedia.de/en/technical-rule/din-spec-32792/368566803
+DIN_05,DIN SPEC 92005:2024-03 Artificial Intelligence - Uncertainty quantification in machine learning,"National standard, DIN SPEC",2024,DIN,Germany ,https://www.dinmedia.de/en/technical-rule/din-spec-92005/376619718
+DIN_06,DIN SPEC 91526:2025-05 Knowledge Graphs for Language Models and Language Models for Knowledge Graphs - Hybrid Applications of symbolic and subsymbolic AI,"National standard, DIN SPEC",2025,DIN,Germany ,https://www.dinmedia.de/en/technical-rule/din-spec-91526/390496163

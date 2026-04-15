@@ -1,0 +1,13 @@
+ID,Title,Type of document,Year,Issuer,Country of issuer,Link
+ICT_01,ACM Code of Ethics and Professional Conduct,Code of conduct,2018,ACM,N/A,https://www.acm.org/code-of-ethics
+ICT_02, Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems (A/IS)– Version II,Policy document,2019,IEEE,N/A,https://standards.ieee.org/wp-content/uploads/import/documents/other/ead_v2.pdf
+ICT_03,IEEE 7000-2021 - IEEE Standard Model Process for Addressing Ethical Concerns during System Design,Standard,2021,IEEE,N/A,https://ieeexplore.ieee.org/document/9536679
+ICT_04,"IEEE 7001-2021 - IEEE Standard for Transparency of Autonomous Systems
+",Standard,2021,IEEE,N/A,https://ieeexplore.ieee.org/document/9726144
+ICT_05,IEEE 7002-2022 - IEEE Standard for Data Privacy Process,Standard,2022,IEEE,N/A,https://ieeexplore.ieee.org/document/9760247
+ICT_06,IEEE 7003-2024 - IEEE Standard for Algorithmic Bias Considerations,Standard,2024,IEEE,N/A,https://ieeexplore.ieee.org/document/10851955
+ICT_07,IEEE 7005-2021 - IEEE Standard for Transparent Employer Data Governance,Standard,2021,IEEE,N/A,https://ieeexplore.ieee.org/document/9618905
+ICT_08,IEEE 7007-2021 - IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems,Standard,2021,IEEE,N/A,https://ieeexplore.ieee.org/document/9611206
+ICT_09,IEEE 7009-2024 - IEEE Standard for Fail-Safe Design of Autonomous and Semi-Autonomous Systems,Standard,2024,IEEE,N/A,https://ieeexplore.ieee.org/document/10582898
+ICT_10,IEEE 7010-2020 - IEEE Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being,Standard,2020,IEEE,N/A,https://ieeexplore.ieee.org/document/9084219
+ICT_11,IEEE 7014-2024 - IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems,Standard,2024,IEEE,N/A,https://ieeexplore.ieee.org/document/10576666
